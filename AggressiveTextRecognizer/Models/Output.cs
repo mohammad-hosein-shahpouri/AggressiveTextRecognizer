@@ -1,11 +1,11 @@
 ﻿using Microsoft.ML.Data;
 
-namespace AggressiveTextRecognizer.Models
+namespace AggressiveTextRecognizer.Models;
+
+public class Output
 {
-    public class Output
-    {
-        [ColumnName("PredictedLabel")]
-        public bool Prediction { get; set; }
-        public float Probability { get; set; }
-    }
+    [ColumnName("PredictedLabel")]
+    public bool Prediction { get; set; }
+
+    public float Probability { get; set; }
 }
